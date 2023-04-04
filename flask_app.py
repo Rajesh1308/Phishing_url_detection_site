@@ -20,7 +20,7 @@ def url_detect():
      print(pred)
      if pred[0] == 1:
          res = "Legitimate website"
-     else:
+     elif pred[0] == -1:
          res = "Phished website"
 
      return res
