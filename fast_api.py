@@ -10,8 +10,8 @@ with open("model_svm_rbf.pkl", "rb") as f:
 
 @app.get("/")
 def home():
-    a = 5
-    return {"Data" : "Testing", "value" : a}
+
+    return {"Result" : "The site is up and running"}
 
 
 @app.get("/url-detect")
