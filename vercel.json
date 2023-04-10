@@ -1,0 +1,19 @@
+{
+    "routes": [
+      {
+        "src": "/url-detect",
+        "dest": "/api/url-detect"
+      }
+    ],
+    "functions": {
+      "api/url-detect": {
+        "runtime": "python3.9",
+        "memory": 128,
+        "maxDuration": 10,
+        "environment": {
+          "FEATURE_FUNCTION_MODULE": "feature"
+        }
+      }
+    }
+  }
+  
