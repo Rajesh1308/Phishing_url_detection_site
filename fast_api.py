@@ -1,8 +1,6 @@
 from fastapi import FastAPI, Path
 import pickle
 import Feature_extraction_new as feature
-
-
 app = FastAPI()
 
 with open("model_svm_rbf.pkl", "rb") as f:
