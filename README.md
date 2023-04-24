@@ -104,4 +104,9 @@
 
 <p>Now your site will be running in your localhost and the link for it will be provided in the result.</p>
 
+<h6>Deployed site</h6>
+<p>This project is deployed on Render hosting service.</p>
+<p>Click <a href="https://phishing-url-detection.onrender.com">here</a> to visit the site and test the URLs.</p>
+
+<h4>Thanks for looking at my projects. Give it a try by clicking on the link provided above.</h4>
 
