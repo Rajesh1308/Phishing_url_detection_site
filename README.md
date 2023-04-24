@@ -87,9 +87,21 @@
   </tr>
 </table>
 
-<p>The run the command inside the virtual environment in the terminal (or command prompt)</p>
+<p>Then run this command inside the virtual environment in the terminal (or command prompt)</p>
 <table>
   <tr>
     <th>pip install -r requirements.txt</th>
   </tr>
 </table>
+<p>Now all the requirements will be installed in your environment</p>
+
+<p>After this, run gunicorn to host the flasp app in localhost. For this run the following command</p>
+<table>
+  <tr>
+    <th>gunicorn app:app</th>
+  </tr>
+</table>
+
+<p>Now your site will be running in your localhost and the link for it will be provided in the result.</p>
+
+
