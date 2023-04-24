@@ -79,7 +79,7 @@
 
 <h3>Try it on your own</h3>
 <p>To run this application in your system or PC, you should install git and Python </p>
-<h6>Requirements Installation</h6>
+
 <p>Once your system is ready with python installed, create a virtual environment (optional but preferred) and clone this repository using the following command</p>
 <table>
   <tr>
