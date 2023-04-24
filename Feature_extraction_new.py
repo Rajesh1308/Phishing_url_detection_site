@@ -467,21 +467,21 @@ def get_data_set(url):
     
 
 
-    dataset.append(having_IP_Address(url))              #1
-    dataset.append(URL_Length(url))                     #2
-    dataset.append(Shortining_Service(url))             #3
-    dataset.append(having_At_Symbol(url))               #4
-    dataset.append(double_slash_redirecting(url))       #5
-    dataset.append(Prefix_Suffix(url))                  #6
-    dataset.append(having_Sub_Domain(url))              #7
+    dataset.append(having_IP_Address(url))                       #1
+    dataset.append(URL_Length(url))                              #2
+    dataset.append(Shortining_Service(url))                      #3
+    dataset.append(having_At_Symbol(url))                        #4
+    dataset.append(double_slash_redirecting(url))                #5
+    dataset.append(Prefix_Suffix(url))                           #6
+    dataset.append(having_Sub_Domain(url))                       #7
     dataset.append(SSLfinal_State(url,response))                 #8
-    dataset.append(Domain_registeration_length(url))    #9
-    dataset.append(Favicon(url,soup,domain))            #10
-    dataset.append(port(url,domain))                    #11
-    dataset.append(HTTPS_token(url))                    #12
-    dataset.append(Request_URL(url,soup,domain))        #13
-    dataset.append(URL_of_Anchor(url,soup,domain))      #14
-    dataset.append(Links_in_tags(url,soup,domain))      #15
+    dataset.append(Domain_registeration_length(url))             #9
+    dataset.append(Favicon(url,soup,domain))                     #10
+    dataset.append(port(url,domain))                             #11
+    dataset.append(HTTPS_token(url))                             #12
+    dataset.append(Request_URL(url,soup,domain))                 #13
+    dataset.append(URL_of_Anchor(url,soup,domain))               #14
+    dataset.append(Links_in_tags(url,soup,domain))               #15
     dataset.append(Submitting_to_email(url,response))            #16
     dataset.append(Abnormal_URL(url,response))                   #17
     dataset.append(Redirect(url,response))                       #18
@@ -490,11 +490,11 @@ def get_data_set(url):
     dataset.append(popUpWidnow(url,response))                    #21
     dataset.append(Iframe(url,response))                         #22
     dataset.append(age_of_domain(url,response))                  #23
-    dataset.append(DNSRecord(url,domain))               #24 
-    dataset.append(Page_Rank(url,google_rank))          #25
-    dataset.append(Google_Index(url))                   #26
+    dataset.append(DNSRecord(url,domain))                        #24 
+    dataset.append(Page_Rank(url,google_rank))                   #25
+    dataset.append(Google_Index(url))                            #26
     dataset.append(Links_pointing_to_page(url,response))         #27
-    dataset.append(Statistical_report(url,domain))      #28
+    dataset.append(Statistical_report(url,domain))               #28
     
     data = pd.DataFrame(dataset).T
 
