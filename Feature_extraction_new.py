@@ -452,16 +452,18 @@ def get_data_set(url):
     domain = urlparse(url).netloc
     if re.match(r"^www.",domain):
         domain = domain.replace("www.","")
-    
+
 
     dataset = []
 
+    
 
 
-    rank_checker_response = requests.post("https://www.checkpagerank.net/index.php", {"name": domain})
+    
         # Extracts google rank of the website
     try:
-        google_rank = int(re.findall(r"Google PageRank: <span style=\"color:#000099;\">([0-9]+)", rank_checker_response.text)[0])
+        rank_checker_response = requests.post("https://www.checkpagerank.net/index.php", {"name": domain})
+        google_rank = int(re.findall(r"Google PageRank: <span style=\"color:#000099;\">([0-9]+)", rank_checker_response.text)[0], timeout=5)
     except:
         google_rank = -1
     
