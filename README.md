@@ -1,5 +1,7 @@
 <h1> Unmasking Phishing URLs : A Machine Learning Approach</h1>
 <p>This project is a generally a flask app in which a Machine Learning model is implemented to detect the legitimacy of URLs</p>
+
+<h5>The project is also hosted using streamlit and you can find the <a href="https://phishingurldetectionsite.streamlit.app/">link here</a>.</h5>
 <h3>Dataset</h3>
 <p>Nearly 11,000 datas are used to train and test this model with SVM algorithm (with RBF kernel).</p>
 <p>The following features are extracted from the URLs provided</p>
